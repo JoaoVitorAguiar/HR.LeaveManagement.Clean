@@ -1,5 +1,4 @@
-﻿using HR.LeaveManagement.Domain;
-using HR.LeaveManagement.Domain.Common;
+﻿using HR.LeaveManagement.Domain.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,9 +14,4 @@ public interface IGenericRepository<T> where T : BaseEntity
     Task<T> CreateAsync(T entity);
     Task<T> UpdateAsync(T entity);
     Task<T> DeleteAsync(T entity);
-}
-
-public interface ILeaveTypeRepository : IGenericRepository<LeaveType>
-{
-
 }
