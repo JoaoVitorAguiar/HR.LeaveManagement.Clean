@@ -25,6 +25,8 @@ public class LeaveTypeConfiguration : IEntityTypeConfiguration<LeaveType>
            }
        );
 
-        builder.Property(q =>  q.Name).IsRequired().HasMaxLength( 100 );
+        builder.Property(q =>  q.Name)
+            .IsRequired()
+            .HasMaxLength( 100 );
     }
 }
